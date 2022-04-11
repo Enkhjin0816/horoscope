@@ -1,0 +1,26 @@
+.buttons {
+    height: fit-content;
+    width: fit-content;
+    position: fixed;
+    transform: translate(20px, -50px);
+}
+.button-white {
+    width: 134px;
+    height: 72px;
+    border: none;
+    border-radius: 6px;
+    background-color: white;
+    color: #1A1C48;
+    font-size: 16px;
+    font-weight: 800;
+}
+.button-blue {
+    width: 114px;
+    height: 56px;
+    border: 1.5px solid #9499C3;
+    background-color: #1A1C48;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+}

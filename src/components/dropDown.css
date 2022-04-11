@@ -1,0 +1,30 @@
+.options {
+    height: 36px;
+    width: 115px;
+    border: none;
+    border-radius: 8px;
+    background-image: #F5F4FB;
+    color: #4B87FB;
+    font-size: 16px;
+    font-weight: 800;
+    font-family: sans-serif;
+}
+.sign {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+.sign2 {
+}
+.btext {
+    color: #9499C3;
+    font-size: 36px;
+    width: 0px;
+}
+.btext2 {
+    color: #9499C3;
+    font-size: 36px;
+    width: 0px;
+}

@@ -1,0 +1,31 @@
+.square {
+    height: 201px;
+    width: 205px;
+    border-radius: 10px;
+    background-color: #fff;
+    opacity: 15%;
+    position: fixed;
+}
+.cont {
+    width: 180px;
+    height: 177px;
+    border: 1.5px dashed white;
+    transform: translate(10px, 10px);
+}
+.flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upperText {
+    justify-self: center;
+    font-weight: 400;
+    font-size: 12px;
+    margin-bottom: -30px;
+    color: white;
+}
+.lowerText {
+    justify-self: center;
+    font-weight: 500;
+    font-size: 32px;
+}

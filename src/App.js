@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { useState } from "react";
+import logo from './assets/bg.png';
+import { LeftBar } from "./components/leftBar";
+import Zurhai from "./components/zurhai";
+import DropDown from "./components/dropDown";
 
-function App() {
+const App = () => {
+  const [sign, setSign] = useState('Cancer');
+  const [date, setDate] = useState('Today')
+  const [toggle, setToggle] = useState(false);
+console.log(date, sign)
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <LeftBar />
+      <div style={{width: '1250px'}}>
+        {toggle ?
+          <div>
+            <Zurhai sign={sign} date={date} /> 
+          </div> :
+          <div>
+            <DropDown setSign={setSign} setDate={setDate} sign={sign} date={date}/>
+          </div>
+        }
+      </div>
+      {toggle ? <button onClick={() => setToggle(false)}>back....</button> : <button onClick={() => setToggle(true)}>.....</button>}  
     </div>
-  );
+  )
 }
 
 export default App;
